@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+/************** 1050px 이하 시작 **************/
+@media screen and (max-width: 1050px) {
+  body {
+    width: 100%;
+  }
+  #header.header {
+    width: 100%;
+  }
+  .header > .link-area {
+    width: 900px;
+  }
+  #cont {
+    min-width: 1050px;
+  }
+  .cont-area {
+    width: 100%;
+  }
+  .mlist {
+    width: 100%;
+  }
+}
+
+/************** 1050px 이하 끝 **************/
+
+/************** 780px 이하 시작 **************/
+@media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
+  #header.header {
+    min-width: 780px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 10;
+  }
+  .main-logo-container {
+    text-align: center;
+  }
+  .main-logo {
+    position: static;
+    margin: auto;
+    padding: 0;
+  }
+  .main-logo img {
+    margin: 7px 0;
+    width: 110px;
+  }
+  .icon-switch {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 12px 0;
+    right: 0px;
+  }
+  .icon-switch img {
+    margin-right: 20px;
+  }
+  .header > .link-area {
+    display: none;
+  }
+  /* GNB메뉴 */
+
+  .gnb {
+    display: none;
+    width: 100%;
+    top: 50px;
+    right: 0;
+    height: 500px;
+    background: #454545;
+    position: fixed;
+  }
+
+  .glist {
+    width: 90%;
+    right: -80px;
+    top: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .glist .sm {
+    flex-basis: 225px;
+  }
+  .glist .sm4,
+  .glist .sm5,
+  .glist .sm6 {
+    margin-top: 160px;
+  }
+  .gnb > ul > li.sm1 .smenu {
+    left: -63px;
+  }
+
+  .gnb > ul > li.sm2 .smenu {
+    left: 186px;
+  }
+
+  .gnb > ul > li.sm3 .smenu {
+    left: 437px;
+  }
+
+  .gnb > ul > li.sm4 .smenu {
+    left: -65px;
+    margin-top: 190px;
+  }
+
+  .gnb > ul > li.sm6 .smenu {
+    left: 420px;
+    margin-top: 190px;
+  }
+  .gnb > ul > li:nth-child(3) {
+    margin-right: 0px;
+  }
+  /* 서브메뉴 */
+  .smenu {
+    height: 40px;
+    overflow: visible;
+  }
+  .smenu ol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* 메인영역 */
+  /* 공통부분 */
+  #cont {
+    min-width: 780px;
+    height: 1500px;
+  }
+  .cont-area {
+    width: 100%;
+  }
+  #cont .title {
+    padding: 80px 0;
+  }
+  /* 영화카드 */
+  .mlist {
+    width: 100%;
+    top: 138px;
+  }
+  .mlist img {
+    width: 300px;
+    height: 452px;
+  }
+  .mlist ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .mlist ul > li:first-child,
+  .mlist ul > li:nth-child(2),
+  .mlist ul > li:nth-child(3),
+  .mlist ul > li:nth-child(4) {
+    margin: 0;
+  }
+  .mlist > ul  li:hover .wrap {
+    height: 452px;
+  }
+  .mlist > ul  li:nth-child(3):hover .wrap,
+  .mlist > ul  li:nth-child(4):hover .wrap {
+    top: 555px;
+  }
+  .mlist .rank {
+    top: -415px;
+    left: -280px;
+  }
+  .wrap {
+    width: 300px;
+    height: 0px;
+    transition: height 0.4s ease-out;
+  }
+  .summary {
+    height: 380px;
+  }
+  .btn-container {
+    top: -3px;
+    margin: 20px 0 40px 0;
+  }
+  .btn-container .reserv {
+    width: 188px;
+    margin-left: 11px;
+  }
+  .btn-container .like {
+    width: 100px;
+  }
+
+  /* 링크박스 */
+  .search {
+    top: 90%;
+    width: 654px;
+  }
+  .search .searchbox:first-child {
+    display: none;
+  }
+  .search .searchbox {
+    border-left: 1px solid #666;
+  }
+  .search .searchbox:nth-child(2) {
+    border-left: none;
+  }
+  /* 마우스 스크롤 애니*/
+  .mouse-wheel {
+    bottom: 5%;
+  }
+  /* 하단영역 */
+  .info {
+    height: auto;
+  }
+  .footer-container {
+    width: 780px;
+    min-width: 780px;
+    height: auto;
+  }
+  .footer-container * {
+    margin-bottom: 17px;
+  }
+  .addrbox {
+    flex-direction: column;
+    margin-top: 5px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  /* 회사정보 */
+  #info address {
+    text-align: center;
+  }
+  .foot-sns {
+    margin-left: 0;
+  }
+}
+
+/************** 780px 이하 끝 **************/
+
+/************** 600px 이하 시작 **************/
+@media screen and (max-width: 600px) {
+  #header.header {
+    min-width: 600px;
+  }
+  /* GNB */
+
+  .glist {
+    top: 0;
+    left:14%;
+    width: 540px;
+    margin: auto;
+  }
+
+  .gnb > ul > li.sm1 .smenu {
+    left: -63px;
+}
+  .gnb > ul > li.sm2 .smenu {
+    left: 133px;
+  }
+  .gnb > ul > li.sm3 .smenu {
+    left: 340px;
+  }
+  .gnb > ul > li.sm4 .smenu {
+  left: -63px;
+  }
+  .gnb > ul > li.sm6 .smenu {
+    left: 340px;
+  }
+  .open {
+    display: block;
+  }
+  .glist .sm {
+    flex-basis: 176px;
+  }
+  /* 메인메뉴 */
+  #cont {
+    min-width: 600px;
+    height: 2700px;
+  }
+  .cont-area {
+    width: 100%;
+  }
+  /* 영화카드리스트 */
+  .mlist {
+    width: 100%;
+  }
+  .mlist > ul  li:nth-child(2):hover .wrap{
+    top: 555px;
+  }
+  .mlist > ul  li:nth-child(3):hover .wrap{
+    top: 1109px;
+  }
+  .mlist > ul  li:nth-child(4):hover .wrap {
+    top: 1665px;
+  }
+  /* 링크박스 */
+  .search {
+    width: 565px;
+  }
+  .search .searchbox {
+    font-size: 12px;
+    padding: 0 40px;
+  }
+  .search .searchbox img {
+    width: 32px;
+    height: 30px;
+  }
+  /* 배너광고영역 */
+  .ad-text {
+    width:300px;
+    margin: 0 auto;
+  }
+  .ad-img {
+    display:none;
+  }
+  .slide-control {
+    margin-left: 33%;
+  }
+  /* 하단영역 */
+  .footer-container {
+    width: 600px;
+    min-width: 600px;
+    height: auto;
+  }
+  .linkbox ul {
+    flex-wrap: wrap;
+  }
+  .linkbox ul li {
+    margin-right: 30px;
+  }
+
+}
+
+/************** 600px 이하 끝 **************/
