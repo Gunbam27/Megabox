@@ -127,7 +127,7 @@ li {
 .smenu {
   position: absolute;
   width: 100%;
-  /* z-index: 2; */
+  z-index: 2;
   top: 65px;
   height: 0px;
   overflow: hidden;
